@@ -316,17 +316,15 @@ header {
   position: absolute;
   top: 85%;
   left: 53%;
-  background-color: #7a5ea4;
+  background-color: #4f4770;
+  color: white;
   width: 40%;
-  border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1vw;
   max-height: 30%;
   overflow: hidden;
 }
 .p-zero {
   font-size: 3vmin;
-}
-.p-one {
 }
 .p-two {
   margin-top: -15%;
@@ -346,7 +344,7 @@ header {
     transform: rotate(359deg);
   }
 }
-/* -------------------------------------------------------------BELOW 375---------------------------------------------- */
+/* -------------------------------------------------------------BELOW 320---------------------------------------------- */
 @media (max-width: 320px) {
   .navbar {
     padding: 0;
@@ -432,7 +430,7 @@ header {
     margin-top: -15%;
   }
 }
-/* -------------------------------------------------------------375-600---------------------------------------------- */
+/* -------------------------------------------------------------321-600---------------------------------------------- */
 @media (min-width: 321px) and (max-width: 599px) {
   .navbar {
     padding: 0;
@@ -533,6 +531,21 @@ header {
   .service {
     width: 90%;
   }
+  /* Problems and Solutions */
+  .product {
+    width: 95%;
+  }
+  .p-in-text {
+    position: static;
+    font-size: 3vw;
+    width: revert;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: -5px;
+    margin-bottom: 90px;
+  }
+  .p-three {
+    margin-top: -15%;
+  }
   /* Footer */
   .footer-col {
     width: 100%;
@@ -582,6 +595,18 @@ header {
   .product {
     width: 90%;
   }
+  .p-in-text {
+    position: static;
+    font-size: small;
+    width: revert;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: -5px;
+    margin-bottom: 20%;
+  }
+  .p-three {
+    margin-top: -15%;
+  }
+
   /* footer */
   .footer-col {
     width: 50%;
@@ -632,6 +657,15 @@ header {
   }
   .service {
     width: 48%;
+  }
+  /* problems and solutions */
+  .p-in-text {
+    position: static;
+    font-size: small;
+    width: revert;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: -5px;
+    margin-bottom: 0;
   }
 }
 /* -------------------------------------------------------------MIN 992PX---------------------------------------------- */
