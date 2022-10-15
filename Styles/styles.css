@@ -287,6 +287,57 @@ header {
   background-color: #ffffff;
 }
 
+/* products */
+.product {
+  border-radius: 3px;
+}
+.products-outer-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.products-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 25px 10%;
+}
+
+.product {
+  width: 40%;
+  height: fit-content;
+  position: relative;
+}
+.p-img {
+  width: 100%;
+  height: inherit;
+}
+.p-in-text {
+  position: absolute;
+  top: 85%;
+  left: 53%;
+  background-color: #7a5ea4;
+  width: 40%;
+  border-radius: 8px;
+  font-size: 1rem;
+  max-height: 30%;
+  overflow: hidden;
+}
+.p-zero {
+  font-size: 3vmin;
+}
+.p-one {
+}
+.p-two {
+  margin-top: -15%;
+}
+.p-three {
+  margin-top: 5%;
+}
+.p-four {
+  margin-top: -15%;
+  margin-bottom: 10%;
+}
 @keyframes logo-anime {
   from {
     transform: rotate(0deg);
@@ -364,6 +415,21 @@ header {
   .services-content {
     margin-top: 30px;
     width: 80%;
+  }
+  /* problems and solutions */
+  .product {
+    width: 95%;
+  }
+  .p-in-text {
+    position: static;
+    font-size: small;
+    width: revert;
+    margin-top: -6px;
+    margin-bottom: 44px;
+    border-radius: 0px 0px 5px 5px;
+  }
+  .p-three {
+    margin-top: -15%;
   }
 }
 /* -------------------------------------------------------------375-600---------------------------------------------- */
@@ -511,6 +577,10 @@ header {
   }
   .service {
     width: 100%;
+  }
+  /* problems and solutions */
+  .product {
+    width: 90%;
   }
   /* footer */
   .footer-col {
