@@ -227,7 +227,77 @@ header {
   border-radius: 5px;
   color: #3565dbf7;
 }
+/* testimonial */
+.testimonial {
+  width: 100vw;
+  height: 50vh;
+  background-color: #352f2f;
+}
+.test-left {
+  background-color: rgb(208, 60, 222);
+  width: 30%;
+  height: 50vh;
+  position: relative;
+  float: left;
+}
+.test-left-content {
+  transform: rotate(270deg);
+  position: absolute;
+  top: 45%;
+  left: 12%;
+  color: #e0cbcb;
+  text-align: left;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 5px;
+  text-shadow: #a3a3a3 1px 1px 8px;
+}
+.test-content {
+  width: 70%;
+  float: left;
+  color: #ffffff;
+}
+.test-content-heads-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.test-content-heads {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test-content-heads button {
+  width: 25%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 10px;
+  background-color: white;
+  margin: 5px 10px;
+  margin-top: 20%;
+  border-radius: 50%;
+}
+.test-content-heads button:first-child {
+  background-color: black;
+  color: white;
+}
 
+.tab-content {
+  width: 90%;
+  height: 120px;
+  padding: 10% 10px;
+  margin: 10px 10px;
+  background-color: #bbbbbb;
+  display: none;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px 10px;
+}
 /* carousal */
 .prev {
   padding: 5px;
@@ -301,16 +371,6 @@ header {
 .next {
   cursor: pointer;
 }
-/* .prev {
-  position: relative;
-  margin-right: -45px;
-  z-index: 100;
-}
-.next {
-  position: relative;
-  margin-left: -45px;
-  z-index: 100;
-} */
 
 /* footer */
 .footer {
@@ -516,6 +576,20 @@ header {
   .p-three {
     margin-top: -15%;
   }
+
+  /* Testimonial */
+  .test-left {
+    width: 20%;
+  }
+  .test-content {
+    margin-left: 20px;
+  }
+  .test-left-content {
+    /* display: none; */
+    font-size: large;
+    left: -25%;
+  }
+
   /* carousal */
   .carousal {
     width: 100vw;
@@ -528,8 +602,6 @@ header {
   .carousal-inner img.active {
     width: 50vh;
     height: 60vw;
-  }
-  .prev {
   }
 }
 /* -------------------------------------------------------------321-600---------------------------------------------- */
@@ -648,6 +720,20 @@ header {
   .p-three {
     margin-top: -15%;
   }
+  /* Testimonial */
+  .test-left {
+    width: 20%;
+  }
+  .test-content {
+    margin-left: 20px;
+  }
+
+  .test-left-content {
+    /* display: none; */
+    font-size: large;
+    left: -25%;
+  }
+
   /* carousal */
   .carousal-inner {
     width: 100vw;
@@ -718,6 +804,10 @@ header {
   .p-three {
     margin-top: -15%;
   }
+  .tab-content {
+    padding-top: 5%;
+  }
+
   /* carousal */
   .carousal-inner {
     width: 100vw;
