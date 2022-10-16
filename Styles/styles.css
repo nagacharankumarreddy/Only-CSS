@@ -157,6 +157,9 @@ header {
 .bottom-overlay a {
   margin: 10px;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /* services */
@@ -169,9 +172,9 @@ header {
   margin-top: 100px;
 }
 .services-content {
-  margin: 10px 0px;
+  margin: 15px 0px;
   align-self: center;
-  width: 50%;
+  width: 70%;
 }
 .services-content h2 {
   text-align: center;
