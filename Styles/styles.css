@@ -227,37 +227,34 @@ header {
 
 /* carousal */
 .prev {
-  width: 80px;
-  height: 20px;
+  padding: 5px;
   background-color: #352f2f;
   color: #e3e7f1;
   transform: rotate(270deg);
   border-radius: 2px;
   text-align: center;
+  border: 2px solid black;
 }
-.prev:hover {
-  color: #352f2f;
-  background-color: #e3e7f1;
-  cursor: pointer;
-}
+
 .next {
-  width: 80px;
-  height: 20px;
+  padding: 5px;
   background-color: #352f2f;
   color: #e3e7f1;
   transform: rotate(270deg);
   border-radius: 2px;
   text-align: center;
+  border: 2px solid black;
 }
-.next:hover {
-  color: #352f2f;
-  background-color: #e3e7f1;
-  cursor: pointer;
+.dir-wrap {
+  width: 50px;
+  height: 20px;
 }
 .carousal {
   width: 80vw;
+  height: 50vh;
   margin: 40px auto;
-  overflow: auto;
+  overflow: hidden;
+  font-size: 5vmin;
 }
 .carousal-header {
   display: flex;
@@ -270,7 +267,7 @@ header {
 }
 .c-header {
   padding: 2px 5px;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
 }
 .carousal-outer {
   display: flex;
@@ -278,8 +275,6 @@ header {
   justify-content: center;
 }
 .carousal-inner {
-  width: 500px;
-  height: 300px;
   position: relative;
   overflow: hidden;
   float: left;
@@ -288,9 +283,10 @@ header {
 }
 .carousal-inner img {
   display: none;
-  width: 500px;
-  height: 300px;
+  width: 70vw;
+  height: 60vh;
 }
+
 .carousal-inner img.active {
   display: block;
 }
@@ -517,9 +513,13 @@ header {
     width: 100vw;
     height: 50vh;
   }
+  .carousal-inner {
+    width: 70vw;
+    height: 60vw;
+  }
   .carousal-inner img.active {
-    width: 200px;
-    height: 200px;
+    width: 50vh;
+    height: 60vw;
   }
   .prev {
   }
@@ -640,6 +640,16 @@ header {
   .p-three {
     margin-top: -15%;
   }
+  /* carousal */
+  .carousal-inner {
+    width: 100vw;
+    height: 40vh;
+  }
+  .carousal-inner img.active {
+    width: 65vw;
+    height: 200px;
+  }
+
   /* Footer */
   .footer-col {
     width: 100%;
@@ -699,6 +709,14 @@ header {
   }
   .p-three {
     margin-top: -15%;
+  }
+  /* carousal */
+  .carousal-inner {
+    width: 100vw;
+    height: 40vh;
+  }
+  .carousal-inner img.active {
+    height: 200px;
   }
 
   /* footer */
@@ -764,6 +782,14 @@ header {
     margin-top: -5px;
     margin-bottom: 0;
   }
+  /* carousal */
+  .carousal-inner {
+    width: 100vw;
+    height: 50vh;
+  }
+  .carousal-inner img.active {
+    height: 50vh;
+  }
 }
 /* -------------------------------------------------------------MIN 992PX---------------------------------------------- */
 
@@ -819,6 +845,15 @@ header {
   .service {
     width: 48%;
   }
+  /* carousal */
+  .carousal-inner {
+    width: 100vw;
+    height: 50vh;
+  }
+  .carousal-inner img.active {
+    width: 65vw;
+    height: 50vh;
+  }
 }
 /* -------------------------------------------------------------MIN 1200PX---------------------------------------------- */
 
@@ -857,7 +892,20 @@ header {
   .serv-img {
     width: -20px;
   }
+  .service p {
+    width: 60%;
+    margin-top: 10px;
+  }
   .service-content {
     height: 25vw;
+  }
+  /* carousal */
+  .carousal-inner {
+    width: 40vw;
+    height: 48vh;
+  }
+  .carousal-inner img.active {
+    width: 65vw;
+    height: 50vh;
   }
 }
