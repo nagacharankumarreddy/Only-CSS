@@ -194,7 +194,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: rgb(242 239 235 / 58%);
-  border-radius: 5px;
+  border-radius: 15px;
   margin: 10spx;
   padding: 5px;
 }
