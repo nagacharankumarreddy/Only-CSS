@@ -10,10 +10,10 @@ $(document).ready(function () {
       next.addClass("active carousal-border").css("z-index", +10);
       curBorder
         .removeClass("carousal-border")
-        .css("border-bottom", "2px solid white");
+        .css({ "border-bottom": "2px solid white", opacity: "0.5" });
       nextBorder
         .addClass("carousal-border")
-        .css("border-bottom", "2px solid black");
+        .css({ "border-bottom": "2px solid black", opacity: "1" });
     }
   });
   $(".prev").click(() => {
@@ -28,10 +28,11 @@ $(document).ready(function () {
       prev.addClass("active").css("z-index", +10);
       curBorder
         .removeClass(" carousal-border")
-        .css("border-bottom", "2px solid white");
+        .css({ "border-bottom": "2px solid white", opacity: "0.5" });
+
       prevBorder
         .addClass("carousal-border")
-        .css("border-bottom", "2px solid black");
+        .css({ "border-bottom": "2px solid black", opacity: "1" });
     }
   });
   $(".prev").hover(

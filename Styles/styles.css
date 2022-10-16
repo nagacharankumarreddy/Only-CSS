@@ -270,7 +270,11 @@ header {
 }
 .c-header {
   padding: 2px 5px;
-  /* transition: all 0.5s ease; */
+  opacity: 0.5;
+  transition: all 1s ease;
+}
+.c-header:first-child {
+  opacity: 1;
 }
 .carousal-outer {
   display: flex;
