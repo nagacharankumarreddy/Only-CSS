@@ -216,10 +216,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
-/* .serv-img {
-  width: 15vw;
-  height: 20vh;
-} */
+
 .service p {
   text-align: center;
   width: 50%;
@@ -227,6 +224,91 @@ header {
   border-radius: 5px;
   color: #3565dbf7;
 }
+
+/* carousal */
+.prev {
+  width: 80px;
+  height: 20px;
+  background-color: #352f2f;
+  color: #e3e7f1;
+  transform: rotate(270deg);
+  border-radius: 2px;
+  text-align: center;
+}
+.prev:hover {
+  color: #352f2f;
+  background-color: #e3e7f1;
+  cursor: pointer;
+}
+.next {
+  width: 80px;
+  height: 20px;
+  background-color: #352f2f;
+  color: #e3e7f1;
+  transform: rotate(270deg);
+  border-radius: 2px;
+  text-align: center;
+}
+.next:hover {
+  color: #352f2f;
+  background-color: #e3e7f1;
+  cursor: pointer;
+}
+.carousal {
+  width: 80vw;
+  margin: 40px auto;
+  overflow: auto;
+}
+.carousal-header {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.carousal-border {
+  border-bottom: 2px solid black;
+  transition: all 0.5s ease;
+}
+.c-header {
+  padding: 2px 5px;
+  transition: all 0.5s ease;
+}
+.carousal-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousal-inner {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 3px;
+  border: 1px solid #ffffff;
+}
+.carousal-inner img {
+  display: none;
+  width: 500px;
+  height: 300px;
+}
+.carousal-inner img.active {
+  display: block;
+}
+.prev,
+.next {
+  cursor: pointer;
+}
+/* .prev {
+  position: relative;
+  margin-right: -45px;
+  z-index: 100;
+}
+.next {
+  position: relative;
+  margin-left: -45px;
+  z-index: 100;
+} */
+
 /* footer */
 .footer {
   background-color: #24262b;
@@ -429,6 +511,17 @@ header {
   }
   .p-three {
     margin-top: -15%;
+  }
+  /* carousal */
+  .carousal {
+    width: 100vw;
+    height: 50vh;
+  }
+  .carousal-inner img.active {
+    width: 200px;
+    height: 200px;
+  }
+  .prev {
   }
 }
 /* -------------------------------------------------------------321-600---------------------------------------------- */
@@ -649,7 +742,7 @@ header {
     background-color: rgb(166, 219, 221);
   }
   .about-text {
-    grid-area: 4/2/7/3;
+    grid-area: 4/1/7/3;
     font-size: xx-large;
   }
   /* services */
@@ -658,6 +751,9 @@ header {
   }
   .service {
     width: 48%;
+  }
+  .service-content {
+    height: 35vw;
   }
   /* problems and solutions */
   .p-in-text {
@@ -712,6 +808,10 @@ header {
     font-size: 4rem;
     font-style: oblique;
   }
+  /* problems and solutions */
+  .product {
+    margin-bottom: 50px;
+  }
   /* services */
   .services {
     margin-top: 150px;
@@ -756,5 +856,8 @@ header {
   }
   .serv-img {
     width: -20px;
+  }
+  .service-content {
+    height: 25vw;
   }
 }
