@@ -145,6 +145,7 @@ header {
 .about-text {
   grid-area: 5/2/7/3;
   transform: rotate(270deg);
+  margin-left: 10px;
 }
 .bottom-overlay h1 {
   margin: 10px;
@@ -219,8 +220,7 @@ header {
 
 .service p {
   text-align: center;
-  width: 50%;
-  background-color: rgb(243, 243, 232);
+  width: 90%;
   border-radius: 5px;
   color: #3565dbf7;
 }
@@ -401,6 +401,7 @@ header {
   font-size: 1vw;
   max-height: 30%;
   overflow: hidden;
+  padding: 3px 10px;
 }
 .p-zero {
   font-size: 3vmin;
@@ -613,9 +614,9 @@ header {
     background-color: rgb(166, 219, 221);
   }
   .about-text {
-    font-size: xx-large;
-    grid-area: 5/1;
-    margin-left: 10px;
+    margin-left: 40px;
+    font-size: 5vmin;
+    grid-area: 5/1/6/2;
   }
 
   /* services */
@@ -643,7 +644,7 @@ header {
   /* carousal */
   .carousal-inner {
     width: 100vw;
-    height: 40vh;
+    height: 25vh;
   }
   .carousal-inner img.active {
     width: 65vw;
@@ -689,7 +690,7 @@ header {
     background-color: rgb(166, 219, 221);
   }
   .about-text {
-    grid-area: 5/1/7/3;
+    grid-area: 4/1/7/3;
     font-size: xx-large;
   }
   .service {
@@ -713,7 +714,7 @@ header {
   /* carousal */
   .carousal-inner {
     width: 100vw;
-    height: 40vh;
+    height: 25vh;
   }
   .carousal-inner img.active {
     height: 200px;
@@ -894,7 +895,7 @@ header {
   }
   .service p {
     width: 60%;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .service-content {
     height: 25vw;
